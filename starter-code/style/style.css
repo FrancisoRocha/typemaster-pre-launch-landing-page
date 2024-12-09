@@ -5,6 +5,67 @@
     --blue: #162542;
     --blueHover: #7B8BAD;
     --btnGris: #E8EFF2;
-    
     --font: "Barlow", sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--blanco);
+}
+
+.header{
+    margin: 2.4rem 2.3rem 0;
+}
+
+@media (min-width: 768px){
+    .header{
+        margin: 4rem 3.9rem 0;
+    }
+}
+
+@media (min-width: 992px){
+    .header{
+        margin: 5.5rem 16.5rem 0 ;
+    }
+}
+
+.header__section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-preOrder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btnGris);
+    width: 15rem;
+    height: 4.8rem;
+    border-radius: .8rem;
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font);
+    line-height: 26px;
+    padding: 1.4rem 1.1rem;
+    transition: background-color .4s;
+}
+
+.btn-preOrder:hover{
+    background-color: var(--blue);
+    color: var(--btnGris);
 }
