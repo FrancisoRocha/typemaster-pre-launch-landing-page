@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
   <title>Frontend Mentor | Typemaster pre-launch landing page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./style/normalize.css">
   <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
 
   <header class="header">
@@ -20,34 +24,73 @@
     </div>
   </header>
 
+  <!-- CONTENIDO -->
   <main class="main">
 
-    <section class="section__hero">
-      <div class="main__info">
-        <h1 class="main__title">Typemaster keyboard</h1>
-        <p class="main__text">Improve your productivity and gaming without breaking the bank.
+    <!--! SECCION ONE -->
+    <section class="typemaster__one">
+      <div class="typemaster__info">
+        <h1 class="typemaster__title">Typemaster keyboard</h1>
+        <p class="typemaster__texto">
+          Improve your productivity and gaming without breaking the bank.
           Upgrade to a high quality mechanical typing experience.
         </p>
-        <div class="btns">
-          <a href="#" class="btns__order">Pre-order now</a>
-          <a href="#" class="btns__release">Release on 5/27</a>
+        <div class="typemaster__btns">
+          <a href="#" class="btn__preorder">Pre-order now</a>
+          <a href="#" class="btn__release">Release on 5/27</a>
         </div>
       </div>
-
-      <div class="main__img">
-        <picture>
+      <!--? IMAGENES -->
+      <div class="typemaster__img">
+        <picture class="keyboard">
           <!-- Imagen para pantallas grandes (escritorio) -->
-          <source srcset="./assets/desktop/image-keyboard.jpg" media="(min-width: 1024px)">
+          <source srcset="./assets/desktop/image-keyboard.jpg" media="(min-width: 1440px)">
           <!-- Imagen para tabletas -->
           <source srcset="./assets/tablet/image-keyboard.jpg" media="(min-width: 768px)">
           <!-- Imagen para móviles -->
-          <img src="./assets/mobile/image-keyboard.jpg" alt="Imagen hero" class="hero__img">
+          <img src="./assets/mobile/image-keyboard.jpg" alt="Imagen hero">
         </picture>
       </div>
-      <img src="./assets/shared/pattern-square.svg" alt="pattern" class="pattern">
+      <!--? PATTERN-->
+      <div class="typemaster__pattern">
+        <img src="./assets/shared/pattern-square.svg" alt="pattern" class="pattern">
+      </div>
+    </section>
+
+    <!--! SECCION TWO -->
+
+    <section class="product__img">
+      <!--* IMAGEN ONE-->
+      <picture class="keyphone">
+        <!-- Imagen para pantallas grandes (escritorio) -->
+        <source srcset="./assets/desktop/image-phone-and-keyboard.jpg" media="(min-width: 1024px)">
+        <!-- Imagen para tabletas -->
+        <source srcset="./assets/tablet/image-phone-and-keyboard.jpg" media="(min-width: 768px)">
+        <!-- Imagen para móviles -->
+        <img src="./assets/mobile/image-phone-and-keyboard.jpg" alt="Imagen hero">
+      </picture>
+      <!--* IMAGEN DOS -->
+      <picture class="glasskey">
+        <!-- Imagen para pantallas grandes (escritorio) -->
+        <source srcset="./assets/desktop/image-glass-and-keyboard.jpg" media="(min-width: 1024px)">
+        <!-- Imagen para tabletas -->
+        <source srcset="./assets/tablet/image-glass-and-keyboard.jpg" media="(min-width: 768px)">
+        <!-- Imagen para móviles -->
+        <img src="./assets/mobile/image-glass-and-keyboard.jpg" alt="Imagen hero">
+      </picture>
+      <!--* PRODUCTO INFO -->
+      <div class="product__info">
+        <h2 class="product__title">Mechanical wireless keyboard</h2>
+        <p class="product__description">The Typemaster keyboard boasts top-notch build and practical design. 
+          It offers a wide variety of switches and keycaps, along with reliable wireless connectivity.
+        </p>
+      </div>
+      <!--? PATTERN-->
+        <img src="./assets/shared/pattern-square.svg" alt="pattern" class="pattern__produ">
     </section>
 
   </main>
 
 </body>
+
 </html>
