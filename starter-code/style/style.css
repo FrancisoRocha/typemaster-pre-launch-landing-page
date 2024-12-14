@@ -588,6 +588,7 @@ body{
 
 @media (min-width: 768px){
     .text{
+        width: 25rem;
         text-align: left;
     }
 }
