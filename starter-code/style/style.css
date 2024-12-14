@@ -41,34 +41,29 @@ body{
 
 .header{
     margin: 2.4rem 2.3rem 0;
-    background-color: teal;
 }
 
 @media (min-width: 768px){
     .header{
         margin: 4rem 3.9rem 0;
-        background-color: cornflowerblue;
     }
 }
 
 @media (min-width: 1024px){
     .header{
         margin: 5rem 4rem 0;
-        background-color: mediumpurple;
     }
 }
 
 @media (min-width: 1440px){
     .header{
         margin: 3rem 7rem 0;
-        background-color: rgb(233, 50, 83);
     }
 }
 
 @media (min-width: 2560px){
     .header{
         margin: 5rem 10rem 0;
-        background-color: #4f40f5;
     }
 }
 
@@ -509,4 +504,118 @@ body{
     .product__description{
         width: 25rem;
     }
+}
+
+/*! SECCION DE INFORMACION */
+
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 5rem;
+}
+
+@media (min-width: 768px) { 
+    .beneficios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        margin-top: 6rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .beneficios{
+        margin-top: -13rem;
+    }
+}
+
+@media (min-width: 1440px){
+    .beneficios{
+        display: flex;
+        flex-direction: row;
+        margin-top: 15rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.compatible,
+.bluetooth,
+.battery,
+.rgb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.compatible__info,
+.bluetooth__info,
+.battery__info,
+.rgb__info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 32.7rem;
+    margin-right: -2rem;
+}
+
+.titles{
+    color: var(--blue);
+    font-size: 2.4rem;
+    font-family: var(--font);
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .titles{
+        text-align: left;
+    }
+}
+
+.text{
+    font-size: 1.6rem;
+    font-family: var(--font);
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--blueHover);
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .text{
+        text-align: left;
+    }
+}
+
+/** ICONOS */
+.icons{
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: var(--orange);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px){
+    .icons{
+        margin-left: -23rem;
+    }
+}
+
+.footer{
+    line-height: 26px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-family: var(--font);
+    color: var(--blueHover);
+    text-align: center;
+    margin: 9rem 0 5rem 0;
 }
